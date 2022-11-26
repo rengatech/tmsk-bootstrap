@@ -73,7 +73,8 @@ h6,
 
 .btn-primary,
 .btn-outline-primary:hover {
-    color: #FFFFFF;
+    color: var(--primary);
+    background-color:#fff;
 }
 
 .btn-primary1,
@@ -762,61 +763,6 @@ h6,
 
 /*** deaerator END ***/
 
-
-
-/*** Footer ***/
-.footer {
-    color: var(--light);
-}
-.footer-bg{
-    background-color: var(--primary);
-}
-.footer-5{
-    display: flex;
-    justify-content: space-around;
-}
-.footer .btn.btn-link {
-    display: block;
-    margin-bottom: 5px;
-    padding: 0;
-    text-align: left;
-    color: var(--light);
-    font-weight: normal;
-    text-transform: capitalize;
-    transition: .3s;
-}
-.footer-space{
-    justify-content: space-between;
-}
-.footer .btn.btn-link::before {
-    position: relative;
-    content: "\f105";
-    font-family: "Font Awesome 5 Free";
-    font-weight: 900;
-    margin-right: 10px;
-}
-
-.footer .btn.btn-link:hover {
-    color: var(--light);
-    letter-spacing: 1px;
-    box-shadow: none;
-}
-
-.copyright {
-    color: #B0B9AE;
-    background-color: #02245B;
-    border-top: 1px solid rgba(255, 255, 255, 0.733);
-}
-
-
-
-
-
-
-
-
-
-
 /* client& service start */
 
 .client-item {
@@ -924,10 +870,12 @@ h6,
     color: #FFFFFF;
     background: var(--primary);
 }
-
+.client-img{
+    margin-left:10rem;
+    
+}
 
 /* client& service End*/
-
 /* deaerator */
 
 .dr-10{
@@ -956,3 +904,48 @@ h6,
 }
 /* deaerator end */
 
+
+
+/*** Footer ***/
+.footer {
+    color: var(--light);
+}
+.footer-bg{
+    background-color: var(--primary);
+}
+.footer-5{
+    display: flex;
+    justify-content: space-around;
+}
+.footer .btn.btn-link {
+    display: block;
+    margin-bottom: 5px;
+    padding: 0;
+    text-align: left;
+    color: var(--light);
+    font-weight: normal;
+    text-transform: capitalize;
+    transition: .3s;
+}
+.footer-space{
+    justify-content: space-between;
+}
+.footer .btn.btn-link::before {
+    position: relative;
+    content: "\f105";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    margin-right: 10px;
+}
+
+.footer .btn.btn-link:hover {
+    color: var(--light);
+    letter-spacing: 1px;
+    box-shadow: none;
+}
+
+.copyright {
+    color: #B0B9AE;
+    background-color: #02245B;
+    border-top: 1px solid rgba(255, 255, 255, 0.733);
+}
