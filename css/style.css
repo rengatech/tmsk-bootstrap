@@ -73,9 +73,9 @@ h6,
 
 .btn-primary,
 .btn-outline-primary:hover {
-    color:var(--primary);
-    background-color: #fff;
+    color: #FFFFFF;
 }
+
 .btn-primary1,
 .btn-outline-primary-1 {
     color: #FFFFFF;
@@ -927,3 +927,32 @@ h6,
 
 
 /* client& service End*/
+
+/* deaerator */
+
+.dr-10{
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 24px;
+    padding-left: 24;
+}
+.level {
+    margin-top: 5rem;
+}
+.img-8{
+    width: 80%;
+}
+.img-18{
+    height: 71%;
+    width: 70%;
+}
+.img-28{
+    height: 75%;
+    width: 60%
+}
+.mt-10{
+    margin-top: 30px;
+}
+/* deaerator end */
+
