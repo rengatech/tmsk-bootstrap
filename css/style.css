@@ -759,7 +759,12 @@ h6,
     .dr-0{
         font-weight: bold
     }
-
+ .range-p{
+    margin-left: 5rem;
+ }
+ .range-p1{
+    margin-left: 2rem;
+ }
 
 /*** deaerator END ***/
 
