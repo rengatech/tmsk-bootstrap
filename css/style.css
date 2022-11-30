@@ -304,7 +304,7 @@ h6,
 }
 
 .page-header {
-    background: linear-gradient(to right, rgba(2, 36, 91, 1) 0%, rgba(2, 36, 91, 0) 100%), url(../img/carousel-2.jpg) center center no-repeat;
+    background: linear-gradient(to right, rgba(2, 36, 91, 1) 0%, rgba(2, 36, 91, 0) 100%), url(../img/contant-image/tray.1.PNG) center center no-repeat;
     background-size: cover;
 }
 
@@ -764,6 +764,24 @@ h6,
  }
  .range-p1{
     margin-left: 2rem;
+ }
+ .p-img{
+    height: 476px;
+ }
+ .ps-img{
+    height: 400px;
+ }
+ .ps1-img{
+    width: 400px;
+    height: 400px;
+ }
+ .cs-img{
+    width: 1920px;
+    height: 1000px;
+ }
+ .exs{
+    margin-top: -10px;
+    margin-bottom: 10px;
  }
 
 /*** deaerator END ***/
