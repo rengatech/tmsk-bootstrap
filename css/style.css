@@ -991,3 +991,7 @@ h6,
     background-color: #02245B;
     border-top: 1px solid rgba(255, 255, 255, 0.733);
 }
+
+.test {
+    background-color: #000;
+}
