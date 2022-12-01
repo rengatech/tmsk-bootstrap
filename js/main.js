@@ -123,3 +123,92 @@
 // scroll
 
 ScrollReveal().reveal('.headline');
+
+
+
+// preloader //
+
+setTimeout(function () {
+  $(".loader-bg").fadeToggle();
+}, 1500);
+
+
+// scrolling animation//
+
+function reveal() {
+    var reveals = document.querySelectorAll(".reveal");
+  
+    for (var i = 0; i < reveals.length; i++) {
+      var windowHeight = window.innerHeight;
+      var elementTop = reveals[i].getBoundingClientRect().top;
+      var elementVisible = 150;
+  
+      if (elementTop < windowHeight - elementVisible) {
+        reveals[i].classList.add("active");
+      } 
+      else {
+        reveals[i].classList.remove("active");
+      }
+    }
+  }
+  
+  window.addEventListener("scroll", reveal);
+
+
+  function bottomreveal() {
+    var reveals = document.querySelectorAll(".bottomreveal");
+  
+    for (var i = 0; i < reveals.length; i++) {
+      var windowHeight = window.innerHeight;
+      var elementTop = reveals[i].getBoundingClientRect().top;
+      var elementVisible = 150;
+  
+      if (elementTop < windowHeight - elementVisible) {
+        reveals[i].classList.add("active");
+      } 
+      else {
+        reveals[i].classList.remove("active");
+      }
+    }
+  }
+  
+  window.addEventListener("scroll", bottomreveal);
+
+
+  function a1() {
+    var a1 = document.querySelectorAll(".a1");
+  
+    for (var i = 0; i < a1.length; i++) {
+      var windowHeight = window.innerHeight;
+      var elementTop = a1[i].getBoundingClientRect().top;
+      var elementVisible = 150;
+  
+      if (elementTop < windowHeight - elementVisible) {
+        a1[i].classList.add("active");
+      } else {
+        a1[i].classList.remove("active");
+      }
+    }
+  }
+  
+  window.addEventListener("scroll", a1);
+
+
+
+  function a2() {
+    var a2 = document.querySelectorAll(".a2");
+  
+    for (var i = 0; i < a2.length; i++) {
+      var windowHeight = window.innerHeight;
+      var elementTop = a2[i].getBoundingClientRect().top;
+      var elementVisible = 150;
+  
+      if (elementTop < windowHeight - elementVisible) {
+        a2[i].classList.add("active");
+      } else {
+        a2[i].classList.remove("active");
+      }
+    }
+  }
+  
+  window.addEventListener("scroll", a2);

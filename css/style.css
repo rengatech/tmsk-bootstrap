@@ -222,9 +222,11 @@ h6,
     outline: none;
 }
 
+
 .navbar .navbar-nav .nav-link:hover,
 .navbar .navbar-nav .nav-link.active {
     color: var(--primary);
+    /* color: white; */
 }
 
 .navbar .dropdown-toggle::after {
@@ -994,4 +996,284 @@ h6,
     color: #B0B9AE;
     background-color: #02245B;
     border-top: 1px solid rgba(255, 255, 255, 0.733);
+}
+
+
+/* aj */ 
+/* button-hover */
+
+.btn1::before,
+.btn1::after {
+  position: absolute;
+  content: "";
+}
+
+.btn1 {
+  position: relative;
+  /* display: inline-block; */
+  width: auto;
+  height: auto;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  /* margin: 0px 25px 15px; */
+  /* min-width: 150px; */
+  padding: 3px;
+  color: rgba(28, 117, 188, 1);
+}
+
+.btn1 span {
+    position: relative;
+    display: inline-block;
+    font-weight: 500;
+    font-size: 18px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    transition: 0.3s !important;
+    color: #1c75bc;
+    padding-top: 28px;
+    padding-bottom: 24px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/*--- btn-2 ---*/
+
+.btn-21::before {
+  /* color: white; */
+  background-color: rgba(28, 117, 188, 1);
+  transition: 0.3s ease-out;
+}
+
+.btn-21 span:hover {
+  color: white;
+  /* background-color: rgba(51, 51, 51, 0.486); */
+  transition: 0.2s 0.1s;
+}
+
+/* 9. hover-slide-right */
+
+.btn1.hover-slide-right::before {
+  top: 27%;
+  bottom: 0;
+  left: 1%;
+  height: 50%;
+  width: 0%;
+}
+
+.btn1.hover-slide-right:hover::before {
+  width: 100%;
+}
+
+.btn-space{
+    margin-right: 25px;
+    /* padding: 20px 0; */
+}
+
+
+
+/* contact-button-hover */
+
+.btn-contact::before,
+.btn-contact::after {
+    position: absolute;
+    content: "";
+   
+  }
+  
+
+  .btn-contact {
+    position: relative;
+    /* display: inline-block; */
+    width: auto; height: auto;
+    background-color: rgba(28, 117, 188, 1);
+    color: black;
+    border: none;
+    cursor: pointer;
+    /* margin: 0px 25px 15px; */
+    min-width: 150px;
+    padding: 5px;
+  }
+    .btn-contact span {         
+      position: relative;
+      display: inline-block;
+      color: white;
+       font-size: 16px;
+      font-weight: bold;
+      /* letter-spacing: 2px;
+      text-transform: uppercase;  */
+      top: 0; left: 0;
+      /* width: 100%; */
+      padding: 6px 16px;
+      transition: 0.3s !important;
+     
+    }
+  
+ 
+  /*--- btn-2 ---*/
+  .btn-contact1::before {
+    /* color: #1C75BC; */
+    background-color: black;
+    transition: 0.3s ease-out;
+    
+  }
+  
+  .btn-contact1 span:hover {
+    color: white;
+    /* background-color: rgba(51, 51, 51, 0.486); */
+    transition: 0.2s 0.1s;
+    
+  }
+  
+  
+  
+  /* 9. hover-slide-right */
+  .btn-contact.hover-slide-right::before {
+    top: 0; bottom: 0; left: 0; 
+    height: 100%; width: 0%;
+  }
+  .btn-contact.hover-slide-right:hover::before {
+    width: 100%;
+  }
+
+
+/* preloader */
+
+  .loader-bg{
+    position: fixed;
+    z-index: 999999;
+    background: #fff;
+    width: 100%;
+    height: 150%;
+  }
+  
+  :root {
+    --animate-duration: 2.5s;
+    --animate-delay: 0.9s;
+  }
+  
+  .loader{
+    border: 0 solid transparent;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: calc(50vh - 75px);
+    left: calc(50vw - 113px);
+  }
+  
+  .loader::after{
+    content: '';
+    background: url(./../img/tmsk-b.svg);
+    /* background: url(); */
+    /* border: 1em solid blue; */
+    background-repeat: repeat;
+    background-position: center;
+    /* border-radius: 50%; */
+    width: 229px;
+    height: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    -webkit-animation: loader 2s linear infinite;
+    animation: loader 2s linear infinite;
+    opacity: 0;
+  }
+  
+
+  
+  
+  .loader::before{
+    -webkit-animation-delay: .5s;
+    animation-delay: .5s;
+  }
+  
+  @-webkit-keyframes loader {
+    0%{
+      transform: scale(0);
+      opacity: 0;
+    }
+  
+    50%{
+      opacity: 1;
+    }
+  
+    100%{
+      transform: scale(1);
+      opacity: 0f;
+    }
+  }
+  
+  @keyframes loader {
+    0%{
+      transform: scale(0);
+      opacity: 0;
+    }
+  
+    50%{
+      opacity: 1;
+    }
+  
+    100%{
+      transform: scale(1);
+      opacity: 0f;
+    }
+  }
+
+/* scroll animation css */
+  .reveal{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 1s all ease;
+  }
+  
+  .reveal.active{
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+
+ .bottomreveal{
+    position: relative;
+    transform: translateY(-150px);
+    opacity: 0;
+    transition: 1s all ease;
+  }
+
+  .bottomreveal.active{
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+
+  .a1{
+    position: relative;
+    transform: translateY(300px);
+    opacity: 0;
+    transition: 1s all ease;
+  }
+  
+  .a1.active{
+    transform: translateY(0);
+    opacity: 1;
+  }
+  
+  .a2{
+    position: relative;
+    transform: translateY(200px);
+    opacity: 0;
+    transition: 1s all ease;
+  }
+  
+  .a2.active{
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+
+  
+.w-25{
+    color: #1c75bc;
 }
