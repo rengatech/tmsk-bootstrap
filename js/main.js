@@ -12,8 +12,7 @@
     spinner();
     
     
-    // Initiate the wowjs
-    // new WOW().init();
+
 
 
     // Sticky Navbar
@@ -120,9 +119,6 @@
 })(jQuery);
 
 
-// scroll
-
-ScrollReveal().reveal('.headline');
 
 
 
@@ -130,6 +126,8 @@ ScrollReveal().reveal('.headline');
 
 setTimeout(function () {
   $(".loader-bg").fadeToggle();
+      // Initiate the wowjs
+      new WOW().init();
 }, 1500);
 
 
@@ -212,3 +210,6 @@ function reveal() {
   }
   
   window.addEventListener("scroll", a2);
+
+
+ 
