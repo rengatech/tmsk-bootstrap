@@ -185,7 +185,7 @@ h6,
     top: -100px;
     transition: .5s;
     border-bottom: 2px solid var(--secondary);
-    box-shadow: 0 0 45px rgba(152, 153, 156);
+    box-shadow: 3px 5px 11px 0px rgba(0, 0, 0, 0.521)
 }
 
 .navbar .navbar-brand {
@@ -798,6 +798,10 @@ h6,
 /*** deaerator END ***/
 
 /* client& service start */
+.pr-3{
+    margin-bottom:-3rem ;
+
+}
 
 .client-item {
     position: relative;
@@ -901,8 +905,8 @@ h6,
 }
 
 .client-item .btn:hover {
-    color: #FFFFFF;
-    background: var(--primary);
+    color: var(--primary);
+    background:#fff ;
 }
 .client-img{
     margin-left:10rem;
@@ -990,8 +994,4 @@ h6,
     color: #B0B9AE;
     background-color: #02245B;
     border-top: 1px solid rgba(255, 255, 255, 0.733);
-}
-
-.test {
-    background-color: #000;
 }
