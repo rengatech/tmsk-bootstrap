@@ -184,6 +184,8 @@ h6,
 .navbar.sticky-top {
     top: -100px;
     transition: .5s;
+    border-bottom: 2px solid var(--secondary);
+    box-shadow: 0 0 45px rgba(152, 153, 156);
 }
 
 .navbar .navbar-brand {
@@ -193,6 +195,7 @@ h6,
     display: flex;
     align-items: center;
     background: var(--light);
+
 }
 
 .navbar .navbar-brand::after {
@@ -204,6 +207,7 @@ h6,
     right: -25px;
     transform: skewX(-30deg);
     background-color: var(--light);
+ 
 }
 .img-01{
     width: 158%;
@@ -439,13 +443,19 @@ h6,
 .service-item {
     position: relative;
     margin: 65px 0 25px 0;
-    box-shadow: 0 0 45px rgba(0, 0, 0, .07);
+    box-shadow:  rgba(28, 117, 188, .7);
 }
  /* unorderlist */
 
  /* unorderlist end*/
 .small-img{
  height: 118px;
+}
+.read-btn{
+    color: var(--light);
+    background-color: var(--primary);
+    border-style: solid;
+    border-color: #0259FF;
 }
 
 .service-item .service-img {
@@ -502,7 +512,7 @@ h6,
     display: flex;
     align-items: center;
     text-align: center;
-    background: rgba(2, 36, 91, .7);
+    background:rgba(28, 117, 188, .7);
     transition: .5s;
 }
 
@@ -552,10 +562,10 @@ h6,
 /*** Project ***/
 .project-carousel {
     position: relative;
-    background: var(--dark);
+    background: var(--primary);
 }
 .gallary-text{
-    color: var(--light);
+    color: var(--primary);
 }
 
 .project-item {
@@ -586,7 +596,7 @@ h6,
     align-items: center;
     justify-content: center;
     text-align: center;
-    background: var(--dark);
+    background: var(--primary);
     transition: .5s;
 }
 
@@ -603,7 +613,7 @@ h6,
     top: -15px;
     left: 0;
     transform: skewY(-5deg);
-    background: var(--dark);
+    background: var(--primary);
     transition: .5s;
 }
 
@@ -756,6 +766,7 @@ h6,
     /* margin-left: 250px;  */
     border-radius: 50px;     
     }
+
     .dr-0{
         font-weight: bold
     }
@@ -848,7 +859,7 @@ h6,
     display: flex;
     align-items: center;
     text-align: center;
-    background: rgba(2, 36, 91, .7);
+    background: rgba(28, 117, 188, .7);
     transition: .5s;
 }
 
@@ -882,9 +893,9 @@ h6,
     display: flex;
     align-items: center;
     justify-content: center;
-    color: var(--secondary);
-    background: #FFFFFF;
-    border: none;
+    color: var(--light);
+    background: var(--primary);
+    border: 1px solid var(--primary);
     box-shadow: 0 0 45px rgba(0, 0, 0, .09);
     z-index: 2;
 }

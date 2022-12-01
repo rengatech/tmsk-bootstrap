@@ -119,3 +119,7 @@
     
 })(jQuery);
 
+
+// scroll
+
+ScrollReveal().reveal('.headline');
