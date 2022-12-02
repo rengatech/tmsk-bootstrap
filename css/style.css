@@ -1283,3 +1283,12 @@ h6,
 }
 
 
+/* client name spacing */
+
+.ml-22{
+    margin-left: 22px;
+}
+
+.ml-60{
+    margin-left: 60px;
+}
