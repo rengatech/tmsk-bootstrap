@@ -1093,7 +1093,7 @@ h6,
     cursor: pointer;
     /* margin: 0px 25px 15px; */
     min-width: 150px;
-    padding: 5px;
+    padding: 11px;
   }
     .btn-contact span {         
       position: relative;
@@ -1273,7 +1273,22 @@ h6,
   }
 
 
-  
+ /* product --- dash line */ 
 .w-25{
     color: #1c75bc;
+}
+
+.mt-113{
+    margin-top: 113px;
+}
+
+
+/* client name spacing */
+
+.ml-22{
+    margin-left: 22px;
+}
+
+.ml-60{
+    margin-left: 60px;
 }
